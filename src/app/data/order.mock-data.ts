@@ -1,0 +1,28 @@
+import {IOrder, StatusEnum, UnitsEnum} from "./order.interface";
+
+export const ORDERS_MOCK_DATA: IOrder[] = [
+  {id: 3301, status: StatusEnum.InProgress, productLine: 'Ready-Mix', product: '1-200-2-C-28-12-1-3-00', quantity: 12, units: UnitsEnum.M_Qube, dateRequested: '20.10.2022'},
+  {id: 2994, status: StatusEnum.Complete, productLine: 'Ready-Mix', product: '1-200-2-C-28-14-1-3-00', quantity: 15.5, units: UnitsEnum.M_Qube, dateRequested: '10.03.2022'},
+  {id: 3305, status: StatusEnum.Pending, productLine: 'Cement', product: 'Gris CPC 30 R Monterrey Extra 50Kg.', quantity: 10, units: UnitsEnum.TN, dateRequested: '10.10.2022'},
+  {id: 3295, status: StatusEnum.Complete, productLine: 'Cement', product: 'Gris CPC30R Tolteca Extra 50Kg', quantity: 12, units: UnitsEnum.TN, dateRequested: '05.04.2022'},
+  {id: 3290, status: StatusEnum.Pending, productLine: 'Stone', product: 'Arena Triturada Caliza Malla 4', quantity: 2, units: UnitsEnum.TN, dateRequested: '29.09.2022'},
+  {id: 5681, status: StatusEnum.InProgress, productLine: 'Aggregates', product: 'Arena Triturada Caliza Malla 4', quantity: 16, units: UnitsEnum.TN, dateRequested: '14.05.2022'},
+  {id: 2351, status: StatusEnum.InProgress, productLine: 'Ready-Mix', product: '1-200-2-C-28-12-1-3-00', quantity: 12, units: UnitsEnum.M_Qube, dateRequested: '16.04.2022'},
+  {id: 2250, status: StatusEnum.Complete, productLine: 'Ready-Mix', product: '1-200-2-C-28-14-1-3-00', quantity: 10.15, units: UnitsEnum.M_Qube, dateRequested: '26.04.2022'},
+  {id: 1256, status: StatusEnum.InProgress, productLine: 'Steel', product: 'Gris CPC 30 R Monterrey Extra 50Kg.', quantity: 10, units: UnitsEnum.TN, dateRequested: '13.12.2022'},
+  {id: 1000, status: StatusEnum.Complete, productLine: 'Steel', product: 'Gris CPC30R Tolteca Extra 50Kg', quantity: 12, units: UnitsEnum.TN, dateRequested: '11.01.2022'},
+  {id: 9856, status: StatusEnum.Pending, productLine: 'Stone', product: 'Arena Triturada Caliza Malla 4', quantity: 22, units: UnitsEnum.TN, dateRequested: '03.03.2022'},
+  {id: 7854, status: StatusEnum.Pending, productLine: 'Aggregates', product: 'Arena Triturada Caliza Malla 4', quantity: 5, units: UnitsEnum.TN, dateRequested: '25.05.2022'},
+  {id: 7000, status: StatusEnum.InProgress, productLine: 'Stone', product: '1-200-2-C-28-12-1-3-00', quantity: 12, units: UnitsEnum.M_Qube, dateRequested: '23.10.2022'},
+  {id: 5987, status: StatusEnum.Complete, productLine: 'Bricks', product: '1-200-2-C-28-14-1-3-00', quantity: 17.5, units: UnitsEnum.M_Qube, dateRequested: '10.03.2022'},
+  {id: 1256, status: StatusEnum.Pending, productLine: 'Cement', product: 'Gris CPC 30 R Monterrey Extra 50Kg.', quantity: 10, units: UnitsEnum.TN, dateRequested: '11.10.2022'},
+  {id: 2568, status: StatusEnum.InProgress, productLine: 'Cement', product: 'Gris CPC30R Tolteca Extra 50Kg', quantity: 17, units: UnitsEnum.TN, dateRequested: '05.04.2022'},
+  {id: 3256, status: StatusEnum.Pending, productLine: 'Aggregates', product: 'Arena Triturada Caliza Malla 4', quantity: 2, units: UnitsEnum.TN, dateRequested: '09.09.2022'},
+  {id: 6584, status: StatusEnum.InProgress, productLine: 'Bricks', product: 'Arena Triturada Caliza Malla 4', quantity: 5, units: UnitsEnum.TN, dateRequested: '14.05.2022'},
+  {id: 4444, status: StatusEnum.Complete, productLine: 'Steel', product: '1-200-2-C-28-12-1-3-00', quantity: 12, units: UnitsEnum.M_Qube, dateRequested: '20.10.2022'},
+  {id: 1225, status: StatusEnum.Complete, productLine: 'Bricks', product: '1-200-2-C-28-14-1-3-00', quantity: 15.5, units: UnitsEnum.M_Qube, dateRequested: '04.03.2022'},
+  {id: 1010, status: StatusEnum.Pending, productLine: 'Cement', product: 'Gris CPC 30 R Monterrey Extra 50Kg.', quantity: 10, units: UnitsEnum.TN, dateRequested: '10.11.2022'},
+  {id: 2048, status: StatusEnum.Complete, productLine: 'Bricks', product: 'Gris CPC30R Tolteca Extra 50Kg', quantity: 99, units: UnitsEnum.TN, dateRequested: '01.04.2022'},
+  {id: 2662, status: StatusEnum.InProgress, productLine: 'Aggregates', product: 'Arena Triturada Caliza Malla 4', quantity: 2, units: UnitsEnum.TN, dateRequested: '29.07.2022'},
+  {id: 9991, status: StatusEnum.Pending, productLine: 'Bricks', product: 'Arena Triturada Caliza Malla 4', quantity: 1, units: UnitsEnum.TN, dateRequested: '01.01.2022'},
+]

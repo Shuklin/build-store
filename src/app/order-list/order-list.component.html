@@ -1,0 +1,54 @@
+<h1>Order history</h1>
+
+<form class="order-filters" [formGroup]="filterForm">
+
+  <div class="filter-group status-filter-group" formGroupName="status">
+    <mat-checkbox class="" formControlName="pending">Pending</mat-checkbox>
+    <mat-checkbox class="" formControlName="progress">In progress</mat-checkbox>
+    <mat-checkbox class="" formControlName="completed">Completed</mat-checkbox>
+  </div>
+
+  <mat-form-field class="filter-group product-line-filter">
+    <mat-label>Product Line</mat-label>
+    <mat-select formControlName="productLines" multiple>
+      <mat-option *ngFor="let productLine of productLinesList" [value]="productLine">{{productLine}}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <div class="filter-group date-filer-group" formGroupName="dateRange">
+    <mat-form-field class="date-field">
+      <mat-label>From</mat-label>
+      <input matInput [matDatepicker]="datepickerFrom" formControlName="dateFrom">
+      <mat-datepicker-toggle matIconSuffix [for]="datepickerFrom"></mat-datepicker-toggle>
+      <mat-datepicker #datepickerFrom></mat-datepicker>
+    </mat-form-field>
+
+    <mat-form-field class="">
+      <mat-label>To</mat-label>
+      <input matInput [matDatepicker]="datepickerTo" formControlName="dateTo">
+      <mat-datepicker-toggle matIconSuffix [for]="datepickerTo"></mat-datepicker-toggle>
+      <mat-datepicker #datepickerTo></mat-datepicker>
+    </mat-form-field>
+
+  </div>
+
+  <mat-form-field appearance="fill" class="filter-group search-filter">
+    <mat-label>Search for Order Number</mat-label>
+    <input matInput placeholder="Placeholder" formControlName="search">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+
+</form>
+
+
+Orders list
+<app-order-card
+  *ngFor="let order of orders
+                      | filter:'status':getFilterStatusArray()
+                      | filter:'productLine':getFilterProductLineArray()
+                      | searchId:getSearchIdLine()
+                      | dateRange:getDateFormValue('dateFrom'):getDateFormValue('dateTo')"
+  [order]="order"></app-order-card>
+
+
+

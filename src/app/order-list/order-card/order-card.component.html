@@ -1,0 +1,9 @@
+<div class="order-card-wrapper" [ngClass]="statusClass">
+  <div class="order-card-field order-card-id">{{order?.id}}</div>
+  <div class="order-card-field order-card-status">{{order?.status}}</div>
+  <div class="order-card-field order-card-product-line">{{order?.productLine}}</div>
+  <div class="order-card-field order-card-product">{{order?.product}}</div>
+  <div class="order-card-field order-card-quantity">{{order?.quantity}} {{order?.units}}</div>
+  <div class="order-card-field order-card-date">{{order?.dateRequested}}</div>
+</div>
+
